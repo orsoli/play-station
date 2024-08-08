@@ -1,4 +1,14 @@
+/* Generics  */
 body{
-    font-family: 'Hip';
-    font-weight: bold;
+    font-family: 'Action, FreeDaFonts';
+}
+
+img{
+    max-width: 100%;
+}
+/* Utils  */
+
+/* Header  */
+#sony-logo{
+    width: 80px;
 }
