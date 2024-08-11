@@ -16,3 +16,14 @@ img{
 .navbar-chevronDown, .navbar-chevronDown-hover{
     width: 10px;
 }
+
+/* Jumbo section  */
+#jumbo{
+    background-image: url('./img/jumbo-bg.png');
+    background-position: center;
+    height: 650px;
+}
+
+.card-title{
+    font-size: 37px;
+}

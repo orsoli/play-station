@@ -139,12 +139,12 @@
                             <button class="btn btn-dark rounded-5">Accedi</button>
                             
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal-btn">
                                 <img src="./img/lens.svg" alt="lens" class="w-50">
                             </button>
                             
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modal-btn" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -163,6 +163,29 @@
             </div>
         </nav>
     </header>
+    <!-- Jumbo section  -->
+    <section class="d-flex flex-column justify-content-end p-3" id="jumbo">
+        <!-- Returnal hero  -->
+        <div class="row">
+            <div class="col-7 col-lg-3">
+                <figure class="card-body p-2">
+                    <img src="./img/returnal-hero-banner-logo.png" alt="returnal logo">
+                </figure>
+            </div>
+        </div>
+        <!-- Acquista ora  -->
+        <div class="row">
+            <div class="col-sm-6 mb-5">
+                <div class="card bg-transparent border-0 text-light">
+                    <div class="card-body">
+                        <h1 class="card-title mb-4">Rompi il cerchio</h1>
+                        <p class="card-text">Rialzati dopo ogni sconfitta una nuova sfida con agni rinascita in questo explosivo thirller fantascientifico, disponibike su exposiva su PS5.</p>
+                        <a href="#" class="btn btn-danger rounded-5">Acquista ora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Script  -->
     <script src="./js/index.js"></script>
