@@ -32,25 +32,30 @@ for(i = 0; i < navLinkElements.length; i++){
     // Save every navbar chevrondown hover element
     const navBarChevronDownHoverElement = navBarChevronDownHoverElements[i];
 
-    // add an event listener 'mouse over' to navbar chevrondown
+    // Add mouseover event listener to navbar chevrondown
     navLinkElement.addEventListener('mouseover', function(){
         // Mouse over event function
         navBarChevronDownElement.classList.toggle('d-none')
         navBarChevronDownHoverElement.classList.toggle('d-none')
-        dropDownMenuElement.classList.toggle('collapse')
     })
     // Add an event listener 'mouse out' to navbar chevrondown
     navLinkElement.addEventListener('mouseout', function(){
         // Mouse over event function
         navBarChevronDownElement.classList.toggle('d-none')
         navBarChevronDownHoverElement.classList.toggle('d-none')
-        dropDownMenuElement.classList.toggle('collapse')
     })
     
     // Add an 'click' event listener 
     navLinkElement.addEventListener('click', function(e){
         e.preventDefault();
-        dropDownMenuElement.classList.toggle('collapse')
+        for(i = 0; i < navLinkElements.length; i++){
+            const invisibleDropDownElement = dropDownMenuElements[i]
+            // Add for all element collapse class
+            invisibleDropDownElement.classList.add('collapse')
+            // Remove collapse class in clicked element
+            dropDownMenuElement.classList.remove('collapse')
+
+        }
     })
 }
 
@@ -60,7 +65,8 @@ for(i = 0; i < imgListElements.length; i++){
    const imgListElement = imgListElements[i]
     console.log(imgListElement)
     // Add an event listener
-    imgListElement.addEventListener('click', function(){
+    imgListElement.addEventListener('click', function(e){
+        e.preventDefault();
         // Save each elements to do inactive
         for(i = 0; i < imgListElements.length; i++){
             const inactiveImgListElement = imgListElements[i]
