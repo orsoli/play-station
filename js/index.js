@@ -54,7 +54,6 @@ for(i = 0; i < navLinkElements.length; i++){
             invisibleDropDownElement.classList.add('collapse')
             // Remove collapse class in clicked element
             dropDownMenuElement.classList.remove('collapse')
-
         }
     })
 }
