@@ -87,13 +87,21 @@ for(i = 0; i < ps5ImgElements.length; i++){
     // Get first child element cloneNode of ps5 img element
     const ps5ImgFirstChild = ps5ImgElement.children[0].cloneNode(true)
     console.log(ps5ImgFirstChild)
-    // Adde click event on ps5 img
+    // Add click event on ps5 img
     ps5ImgElement.addEventListener('click', function(){
         // Remove  w-50 class from ps5FirstChild element
         ps5ImgFirstChild.classList.remove('w-50')
         // Replace the first child of ps5ContainerElement with ps5ImgFirstChild
         ps5ContainerElement.replaceChild(ps5ImgFirstChild, ps5ContainerElement.children[0])
         console.log(ps5ImgFirstChild)
+        for(i = 0; i < ps5ImgElements.length; i++){
+            // Remove active-img in ps5Img element
+            const inactivePs5ImgElement = ps5ImgElements[i] 
+            console.log(inactivePs5ImgElement)
+            inactivePs5ImgElement.classList.replace('active-img','opacity-50')
+            // Add the effect after click.'opacity:1, border bottom' in ps5Img element
+            ps5ImgElement.classList.replace('opacity-50', 'active-img')
+        }
     })
 }
 

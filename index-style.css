@@ -6,12 +6,21 @@ body{
 img{
     max-width: 100%;
 }
-/* Utils  */
 
+a{
+    display: block;
+}
+
+/* Utils  */
 .active-card{
     border: 2px solid #0172CE;
     border-radius: 20px;
     padding: 2px;
+}
+
+.active-img{
+    opacity: 1;
+    border-bottom: 2px solid #0172CE;
 }
 
 /* Header  */
@@ -33,3 +42,5 @@ img{
 .card-title{
     font-size: 37px;
 }
+
+/* PS% Img and info section  */
