@@ -11,6 +11,8 @@ const dropDownMenuElements = document.querySelectorAll(".dropdown-menu");
 const navBarChevronDownElements = document.querySelectorAll(".navbar-chevronDown")
 const navBarChevronDownHoverElements = document.querySelectorAll(".navbar-chevronDown-hover")
 const imgListElements = document.querySelectorAll(`.img-list li`)
+const ps5ContainerElement = document.getElementById('ps5-img-container')
+const ps5ImgElements = document.querySelectorAll(`li>.ps5-img`)
 
 
 // --- Processing phase
@@ -76,6 +78,23 @@ for(i = 0; i < imgListElements.length; i++){
         }
     })
 
+}
+
+//Add for loop te pass on each element of ps5 list images
+for(i = 0; i < ps5ImgElements.length; i++){
+    const ps5ImgElement = ps5ImgElements[i]
+    console.log(ps5ImgElement)
+    // Get first child element cloneNode of ps5 img element
+    const ps5ImgFirstChild = ps5ImgElement.children[0].cloneNode(true)
+    console.log(ps5ImgFirstChild)
+    // Adde click event on ps5 img
+    ps5ImgElement.addEventListener('click', function(){
+        // Remove  w-50 class from ps5FirstChild element
+        ps5ImgFirstChild.classList.remove('w-50')
+        // Replace the first child of ps5ContainerElement with ps5ImgFirstChild
+        ps5ContainerElement.replaceChild(ps5ImgFirstChild, ps5ContainerElement.children[0])
+        console.log(ps5ImgFirstChild)
+    })
 }
 
 // Add Burger menu click event listener
