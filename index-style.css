@@ -57,3 +57,12 @@ a{
     background-color: #1f1f1f;
     color: white;
 }
+
+/* Ps plus section  */
+.ps-plus{
+    background-color: #BEBCBB;
+}
+
+#btn-ps-plus{
+    background-color: rgba(225, 225, 225, 0.8)
+}
