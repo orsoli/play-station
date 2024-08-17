@@ -11,6 +11,10 @@ a{
     display: block;
 }
 
+footer{
+    background-color: #00439C;
+}
+
 /* Utils  */
 .active-card{
     border: 2px solid #0172CE;
@@ -75,4 +79,17 @@ a{
 /* Social media section  */
 .social-list{
     max-width: 500px;
+}
+
+/* Footer  */
+#langage-globe{
+    width: 20px;
+}
+
+#language{
+    appearance: none;
+}
+
+#sie-logo{
+    width: 150px;
 }
