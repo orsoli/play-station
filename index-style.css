@@ -71,3 +71,8 @@ a{
 .ps-now{
     background-color: #161C3B   ;
 }
+
+/* Social media section  */
+.social-list{
+    max-width: 500px;
+}
