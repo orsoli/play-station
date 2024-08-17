@@ -21,6 +21,7 @@ a{
 .active-img{
     opacity: 1;
     border-bottom: 2px solid #0172CE;
+    padding: 20px;
 }
 
 /* Header  */
@@ -43,4 +44,16 @@ a{
     font-size: 37px;
 }
 
-/* PS% Img and info section  */
+/* It takes two section  */
+#takes-two{
+    background-image: url('./img/it-takes-two-hero-banner-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+/* Nuove uscite section  */
+.nuove-uscite{
+    background-color: #1f1f1f;
+    color: white;
+}
