@@ -24,7 +24,7 @@ function burgerClickHandling(){
 }
 // --- Loping phase
 // Ceate for loop to pass in each navlink element
-for(i = 0; i < navLinkElements.length; i++){
+for(let i = 0; i < navLinkElements.length; i++){
     // Save each dropdown element
     const dropDownMenuElement = dropDownMenuElements[i]
     // Save each navlink element
@@ -50,7 +50,7 @@ for(i = 0; i < navLinkElements.length; i++){
     // Add an 'click' event listener 
     navLinkElement.addEventListener('click', function(e){
         e.preventDefault();
-        for(i = 0; i < navLinkElements.length; i++){
+        for(let i = 0; i < navLinkElements.length; i++){
             const invisibleDropDownElement = dropDownMenuElements[i]
             // Add for all element collapse class
             invisibleDropDownElement.classList.add('collapse')
@@ -61,7 +61,7 @@ for(i = 0; i < navLinkElements.length; i++){
 }
 
 // Add for loop to pass in every li element in img list
-for(i = 0; i < imgListElements.length; i++){
+for(let i = 0; i < imgListElements.length; i++){
     // Save each of list element
    const imgListElement = imgListElements[i]
     console.log(imgListElement)
@@ -69,7 +69,7 @@ for(i = 0; i < imgListElements.length; i++){
     imgListElement.addEventListener('click', function(e){
         e.preventDefault();
         // Save each elements to do inactive
-        for(i = 0; i < imgListElements.length; i++){
+        for(let i = 0; i < imgListElements.length; i++){
             const inactiveImgListElement = imgListElements[i]
             // Remove active class for all elements
             inactiveImgListElement.classList.remove('active-card')
@@ -81,7 +81,7 @@ for(i = 0; i < imgListElements.length; i++){
 }
 
 //Add for loop te pass on each element of ps5 list images
-for(i = 0; i < ps5ImgElements.length; i++){
+for(let i = 0; i < ps5ImgElements.length; i++){
     const ps5ImgElement = ps5ImgElements[i]
     console.log(ps5ImgElement)
     // Get first child element cloneNode of ps5 img element
@@ -94,7 +94,7 @@ for(i = 0; i < ps5ImgElements.length; i++){
         // Replace the first child of ps5ContainerElement with ps5ImgFirstChild
         ps5ContainerElement.replaceChild(ps5ImgFirstChild, ps5ContainerElement.children[0])
         console.log(ps5ImgFirstChild)
-        for(i = 0; i < ps5ImgElements.length; i++){
+        for(let i = 0; i < ps5ImgElements.length; i++){
             // Remove active-img in ps5Img element
             const inactivePs5ImgElement = ps5ImgElements[i] 
             console.log(inactivePs5ImgElement)

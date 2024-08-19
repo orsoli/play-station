@@ -37,6 +37,13 @@ footer{
     width: 10px;
 }
 
+/* Modal  */
+.modal{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
 /* Jumbo section  */
 #jumbo{
     background-image: url('./img/jumbo-bg.png');
